@@ -1,6 +1,6 @@
 script_name("MQ Reporter")
 script_author("zloymolodoy")
-script_version("1.0")
+script_version("0.0")
 
 local sampev = require 'lib.samp.events'
 local encoding = require 'encoding'
@@ -53,6 +53,9 @@ function main()
                 sendReportMessage()
                 sendMessage = false
             end
-            end
+        end
+        if isKeyJustPressed(87) then
+            sendReportMessage()
+        end
         end
     end
